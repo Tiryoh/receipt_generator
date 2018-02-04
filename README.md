@@ -4,7 +4,7 @@
 
 ## 使い方
 
-まず、`name_list.dat`を編集します。
+まず、`receipt_list.csv`を編集します。
 `領収書管理番号`、`名前`、`金額`の順に並んでいます。
 
 次に`Makefile`の以下の欄を修正してください。
@@ -38,9 +38,9 @@ brew install gnuplot --with-aquaterm --with-cairo --with-qt --with-wxmac --with-
 
 全員同じ金額でリストを作成する場合、次の方法で簡単にリストを作成できます。
 
-* `names.txt`に名前だけリストアップ
+* `name_list.csv`に名前だけリストアップ
 * 以下のコマンドを実行
 
 ```
-cat names.txt | nl | awk '{print "2017-000"$1" "$2" 10000"}' > name_list.dat
+cat name_list.csv | nl | awk '{print "2017-000"$1","$2",10000"}' > receipt_list.csv
 ```
