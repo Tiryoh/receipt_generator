@@ -44,3 +44,9 @@ brew install gnuplot --with-aquaterm --with-cairo --with-qt --with-wxmac --with-
 ```
 cat name_list.csv | nl | awk '{print "2017-000"$1","$2",10000"}' > receipt_list.csv
 ```
+
+## ライセンス
+
+Apache License Version 2.0にて公開しています。
+
+(C) 2018 Tiryoh <tiryoh@gmail.com>
